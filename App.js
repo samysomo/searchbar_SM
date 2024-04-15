@@ -1,11 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import React, {useState} from 'react';
+import SearchBar from "./Components/SearchBar";
+import ProductsList from "./Components/ProductsList";
+import products from "./data";
 
 export default function App() {
+  const [search, setSearch] = useState('');
+  const [filteredProducts, setFilteredProducts] = useState(products);
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <SearchBar value={search} onChangeText={}/>
+        <ProductsList products={filteredProducts}/>
     </View>
   );
 }
