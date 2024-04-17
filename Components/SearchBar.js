@@ -15,11 +15,17 @@ const SearchBar = ({value, onChangeText}) => {
 
 const styles = StyleSheet.create({
     searchBar: {
-        height: 40,
-        borderColor: 'gray',
-        borderWidth: 1,
-        margin: 10,
-        padding: 10
+        width: 240,
+        height: 65,
+        marginTop: 60,
+        marginBottom: 20,
+        borderRadius: 5, 
+        borderWidth: 2,
+        borderStyle: "solid",
+        backgroundColor: "#f3f4f6",
+        paddingVertical: 3,
+        paddingHorizontal: 4,
+        color: "black"
     }
 });
 
